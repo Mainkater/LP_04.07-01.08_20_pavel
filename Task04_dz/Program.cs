@@ -13,18 +13,23 @@ int c = Convert.ToInt32(Console.ReadLine());
 
 // int m = 2;
 
-if (a > b && a > c)
-{
-    Console.Write($"Максимальное число {a}");
-}
-if (b > a && b > c)
-{
-    Console.Write($"Максимальное число {b}");
-}
-if (c > a && c > b)
-{
-    Console.Write($"Максимальное число {c}");
-}
+// if (a > b && a > c)
+// {
+//     Console.Write($"Максимальное число {a}");
+// }
+// if (b > a && b > c)
+// {
+//     Console.Write($"Максимальное число {b}");
+// }
+// if (c > a && c > b)
+// {
+//     Console.Write($"Максимальное число {c}");
+// }
 
+int max = a;
 
+if (a > max) max = a;
+if (b > max) max = b;
+if (c > max) max = c;
 
+Console.WriteLine($"Максимальное число: {max}");
